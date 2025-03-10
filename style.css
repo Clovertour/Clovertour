@@ -239,8 +239,9 @@ html {
 /* Заголовок секции */
 .block2-title {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 2.5rem;
+    font-family: Lobster;
 }
 
 /* Контейнер карточек */
@@ -250,7 +251,12 @@ html {
     gap: 20px;
     flex-wrap: wrap;
 }
-
+.card-content h1 {
+    font-family: Inika;
+}
+.card-content h2 {
+    font-weight: 200;
+}
 /* Карточка */
 .card1, .card2, .card3 {
     background: white;
@@ -281,14 +287,14 @@ html {
 
 /* Заголовок карточки */
 .card-content h1 {
-    font-size: 22px;
+    font-size: 1.3rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1.5rem;
 }
 
 /* Подзаголовок */
 .card-content h2 {
-    font-size: 16px;
+    font-size: 1rem;
     color: #666;
 }
 
@@ -406,6 +412,7 @@ html {
     align-items: center;
     justify-content: center;
     padding: 50px 0;
+    text-align: center; /* Центрирование всего текста */
 }
 
 .block3-container {
@@ -414,7 +421,7 @@ html {
     width: 80%;
     max-width: 1200px;
     gap: 45px;
-    justify-content: space-between;
+    justify-content: center; /* Центрируем все элементы внутри контейнера */
 }
 
 .block3-subcont1, .block3-subcont2 {
@@ -422,56 +429,45 @@ html {
     flex-direction: column;
     gap: 10px;
     width: 48%; /* Два блока в ряд */
+    align-items: center; /* Центрируем элементы внутри каждого подблока */
 }
 
 .block3-info1, .block3-info2, .block3-info3, .block3-info4 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center; /* Центрируем элементы по горизонтали */
     padding: 20px;
     width: 100%;
     height: 100px;
 }
 
 .block3-text {
-    width: 80%;
+    width: 100%;
     padding-right: 15px;
 }
 
 .block3-info1-title, .block3-info2-title, .block3-info3-title, .block3-info4-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-.block3-info1-subtitle, .block3-info2-subtitle, .block3-info3-subtitle, .block3-info4-subtitle {
-    font-size: 1rem;
-    width: 80%;
+    font-size: 1.5rem;
     font-weight: normal;
-    
+    font-family: Lobster;
 }
 
-.block3-image {
-    width: 20%; /* 40% от блока */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.block3-info1-subtitle, .block3-info2-subtitle, .block3-info3-subtitle, .block3-info4-subtitle {
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Inika;
 }
 
-.block3-image img {
-    max-width: 80px; /* Или другой фиксированный размер, чтобы иконки не растягивались */
-    max-height: 80px;
-    width: auto;
-    height: auto;
-}
-
-
+/* Центрируем дивайдер и устанавливаем ширину 50% */
 .block3-divider {
     width: 60%;
-    align-items: center;
     height: 2px;
     background-color: grey;
-    margin: 5px auto; /* Центрируем линию и добавляем отступ */
+    margin: 10px auto; /* Центрируем линию и добавляем отступ сверху и снизу */
 }
-
 
 /*SECTION SAFETY*/
 
@@ -496,23 +492,30 @@ html {
     min-height: 400px; /* Фиксированная минимальная высота */
     transition: transform 0.3s ease-out; /* Добавлена плавная анимация */
 }
+
 .block4-title {
     font-size: 2rem;
     padding-bottom: 2rem;
+    font-family: Lobster;
+    font-weight: normal;
 }
 
 .block4-image-container {
     position: relative;
     width: 100%;
-    max-width: 700px; /* Задай нужную ширину */
+    max-width: 700px; /* Максимальная ширина */
+    height: 400px; /* Фиксированная высота контейнера */
     margin: auto;
-    transition: transform 0.3s ease-out; /* Добавлен плавный переход */
+    overflow: hidden; /* Обрезаем изображение, если оно выходит за пределы контейнера */
+    display: flex;
+    align-items: center; /* Центрирование изображения по вертикали */
+    justify-content: center; /* Центрирование изображения по горизонтали */
 }
 
 .block4-image-container img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover; /* Изображение масштабируется с сохранением пропорций, заполняя контейнер */
     border-radius: 10px;
     transition: transform 0.3s ease-out;
 }
@@ -545,11 +548,16 @@ html {
     flex-grow: 1;
     margin-left: 40px;
     transition: margin-left 0.3s ease-out; /* Плавный переход для отступа */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .block4-accordion .accordion-item {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
 }
+
 .accordion-button {
     width: 100%;
     text-align: left;
@@ -571,6 +579,7 @@ html {
     transform-origin: top;
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out, transform 0.3s ease-out;
 }
+
 .accordion-content.open {
     opacity: 1;
     transform: scaleY(1);
@@ -578,21 +587,31 @@ html {
 
 .accordion-button {
     font-size: 1.2rem;
+    font-family: Inika;
     font-weight: bold;
+    text-decoration: none;
 }
+
 .accordion-content {
     font-size: 1.2rem;
+    font-family: Inika;
 }
 
 /*WHY WE*/
+
 /*GALLERY*/
 
 .gallery {
     width: 80%;
     margin: 50px auto;
     text-align: center;
+    margin-top: 5rem;
 }
-
+.gallery-title {
+    font-size: 2rem;
+    font-family: Lobster;
+    font-weight: normal;
+}
 .gallery-container {
     display: flex;
     flex-direction: column;
@@ -703,7 +722,9 @@ html {
     flex: 1;
     text-align: center;
 }
-
+.footer-right span {
+    text-decoration: underline;
+}
 .footer-center {
     flex: 1;
     text-align: center;

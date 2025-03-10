@@ -69,16 +69,6 @@ html {
     padding: 15px;
 }
 
-.block3-image {
-    width: 100%; /* Изображения занимают всю ширину блока */
-    justify-content: center;
-}
-
-.block3-image img {
-    max-width: 60px; /* Уменьшаем размер изображений */
-    max-height: 60px;
-}
-
 .block3-info1-title, .block3-info2-title, .block3-info3-title, .block3-info4-title {
     font-size: 1.1rem; /* Уменьшаем размер шрифта для мобильных устройств */
 }
