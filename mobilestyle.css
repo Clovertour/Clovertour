@@ -140,3 +140,92 @@ html {
     display: none;
 }
 /*Gallery*/
+
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 8px;
+        padding-top: 30px;
+    }
+    
+    /* Header */
+    .header {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    
+    .nav-bar {
+        gap: 0.2rem;
+    }
+    
+    .nav-menu {
+        gap: 0.5rem;
+    }
+    
+    /* Block1 */
+    .block1-content {
+        width: 60%;
+    }
+    .block1-bt {
+        display: none;
+    }
+    .block1-content h2 {
+        font-size: 0.7rem;
+    }
+    .block1-content h1 {
+        font-size: 1.3rem;
+    }
+    .block2 {
+        width: 80%;
+    }
+    .block2-title {
+        font-size: 1.3rem;
+    }
+    .card-content h1{
+        font-size: 1rem;
+    }
+    .card-content h2{
+        font-size: 0.7rem;
+    }
+    /* Safety */
+    .block3-container {
+        gap: 10px;
+    }
+    
+    .block3-info1-title, .block3-info2-title, .block3-info3-title, .block3-info4-title {
+        font-size: 1rem;
+    }
+    
+    .block3-info1-subtitle, .block3-info2-subtitle, .block3-info3-subtitle, .block3-info4-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    /* Why we */
+    .block4-title {
+        font-size: 1.3rem;
+    }
+    
+    .block4-image-container {
+        margin: 15px 0;
+    }
+    
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .accordion-button {
+        font-size: 1rem;
+    }
+    
+    .accordion-content {
+        font-size: 0.9rem;
+    }
+    
+    /* Gallery */
+    .gallery {
+        display: none;
+    }
+    .footer {
+        font-size: 0.5rem;
+    }
+}
