@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*BLOCK 4*/
 
 //ИЗОБРАЖЕНИЕ АККОРДЫ
-const images = ["/images/animbg1.jpg", "/images/animbg2.jpg", "/images/animbg3.jpg"];
+const images = ["images/animbg1.jpg", "images/animbg2.jpg", "images/animbg3.jpg"];
 let currentImageIndex = 0;
 let autoSwitch = true;
 let timeoutId;
