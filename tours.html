@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- 1c2sg6gJF2mm5fMq6pvXTzBBJljxP9Qv85nLeKcPhEvg -->
+    <!-- AKfycbydivqcaCt1tIUMV8ff56Yfbw7fQIjerduD6ubXwD_7Y-HQogTbk7Rm71839Li5zU8I -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Tours</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+        <nav class="nav-bar">
+
+            <a href="index.html" class="logo">
+                <img src="images/logo2.png" alt="Логотип">
+            </a>
+            
+            <ul class="nav-menu">
+
+                <a href="index.html" data-i18n="about">О нас</a>
+                <a href="tours.html" data-i18n="tours">Туры</a>
+                <a href="index.html" data-i18n="contacts">Контакты</a>
+                <a href="#gallery" data-i18n="gallery">Галерея</a>
+
+
+                <div class="language-switcher">
+                    <button id="current-lang">RU</button>
+                    <ul id="lang-menu" class="hidden">
+                        <li data-lang="ru">RU</li>
+                        <li data-lang="en">EN</li>
+                        <li data-lang="es">ES</li>
+                    </ul>
+                </div>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <button id="scrollTopBtn" class="scroll-top">↑</button>
+    <!-- Модальное окно -->
+    <div id="gallery-modal" class="modal-gallery-main">
+        <div class="modal-content">
+            <span class="close-gallery">&times;</span>
+            <div class="modal-gallery">
+                <img src="images/gallery1.jpg" alt="Image 1">
+                <img src="images/gallery2.jpg" alt="Image 2">
+                <img src="images/gallery3.jpg" alt="Image 3">
+                <img src="images/gallery4.jpg" alt="Image 4">
+                <img src="images/gallery5.jpg" alt="Image 5">
+                <img src="images/gallery6.jpg" alt="Image 6">
+            </div>
+        </div>
+    </div>
+
+    <div class="tour-main-cont">
+
+        <div class="tour1-block">
+            <div class="tour1-block-img">
+                <img src="/images/bg1.png" alt="">
+            </div>
+            <div class="tour1-block-text">
+                <div class="tour1-block-title">Тур в Киларни</div>
+                <div class="tour1-block-descript">Насладитесь природой и историей этого уютного ирландского города, c его замками и побережьем.</div>
+                <button class="tour1-block-bt" data-i18n="block2-card3-bt1">Забронировать</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h1 class="footer-title" data-i18n="footer-title">Свяжитесь с нами:</h1>
+                <div class="email-phone">
+                    <a href="mailto:example@email.com" class="footer-email">olgatourbest@gmail.com</a>
+                </div>
+
+                <ul class="social-links">
+                    <li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-center">
+                <a href="index.html" class="logo2">
+                    <img src="images/logo2.png" alt="Логотип">
+                </a>
+            </div>
+        
+            <div class="footer-right">
+                <p>&copy; 2025 Все права защищены</p>
+                <p>Политика конфиденциальности | Условия использования</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <script src="script.js"></script>
+</body>
+</html>

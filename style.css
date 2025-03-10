@@ -1,0 +1,752 @@
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*HEADER*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон */
+    backdrop-filter: blur(10px); /* Размытие заднего фона */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-family: Lobster;
+    font-size: 1.2rem;
+}
+
+/*BAR*/
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*MENU*/
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease-in;
+    display: inline-block;
+}
+.nav-menu a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+/*LOGO*/
+.logo img{
+    height: 50px;
+    max-height: 100%;
+    width: auto;
+    transition: transform 0.2s ease-in;
+    display: inline-block;
+}
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/*LANGUAGE BT*/
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    
+}
+
+#current-lang {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    padding: 0 5px;
+    cursor: pointer;
+    font-family: Lobster;
+}
+
+#lang-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    max-width: 50px;
+    box-shadow: 0;
+}
+
+#lang-menu li {
+    padding: 5px 10px;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+}
+
+#lang-menu li:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+/* Показываем меню при активации */
+#lang-menu.show {
+    display: block;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-top:hover {
+    background-color: black;
+    color: white;
+}
+
+.scroll-top.show {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*BLOCK1*/
+
+.block1 {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Почти весь экран */
+    overflow: hidden;
+}
+
+.slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.block1-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.block1 h1 {
+    font-size: 3rem;
+    font-family: Lobster;
+    text-decoration: underline;
+}
+
+.block1 h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    width: 100%;
+    font-family: Montserrat;
+    font-weight: 580;
+}
+
+.block1-bt {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 13rem;
+    border-radius: 10px;
+}
+
+.block1-bt:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    transform: rotate(180deg);
+}
+/*BLOCK1*/
+
+/*SECTION TOURS*/
+
+/* Общий контейнер секции */
+.block2 {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+/* Заголовок секции */
+.block2-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+
+/* Контейнер карточек */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Карточка */
+.card1, .card2, .card3 {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    height: 400px; /* Фиксированная высота */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Анимация при наведении */
+.card1:hover, .card2:hover, .card3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Верхняя часть (заголовки) */
+.card-content {
+    flex: 1; /* Занимает 50% карточки */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Заголовок карточки */
+.card-content h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Подзаголовок */
+.card-content h2 {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Нижняя часть (изображение) */
+.card-image {
+    position: relative;
+    height: 50%; /* Занимает нижнюю половину */
+    overflow: hidden;
+}
+
+/* Само изображение */
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Кнопка поверх изображения */
+.card-button {
+    position: absolute;
+    font-family: Montserrat;
+    font-weight: 500;
+    width: 80%;
+    text-decoration: underline;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Эффект при наведении на кнопку */
+.card-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+    margin: 10% auto;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    text-align: center;
+}
+.modal-content input {
+    width: 80%;
+    height: 25px;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+}
+.modal-content img {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    height: auto;
+}
+.modal-content h2 {
+    font-family: Lobster;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.modal-content button {
+    background-color: white;
+    border: none;
+    transition: transform 0.2s ease-in;
+    cursor: pointer;
+    font-family: Montserrat;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 80%;
+}
+.modal-content button:hover {
+    transform: scale(1.2);
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+/*SECTION TOURS*/
+
+/*SECTION SAFETY*/
+.block3 {
+    display: flex;
+    background-color: #fcf1dd;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.block3-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+    gap: 45px;
+    justify-content: space-between;
+}
+
+.block3-subcont1, .block3-subcont2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 48%; /* Два блока в ряд */
+}
+
+.block3-info1, .block3-info2, .block3-info3, .block3-info4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+.block3-text {
+    width: 80%;
+    padding-right: 15px;
+}
+
+.block3-info1-title, .block3-info2-title, .block3-info3-title, .block3-info4-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.block3-info1-subtitle, .block3-info2-subtitle, .block3-info3-subtitle, .block3-info4-subtitle {
+    font-size: 1rem;
+    width: 80%;
+    font-weight: normal;
+    
+}
+
+.block3-image {
+    width: 20%; /* 40% от блока */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block3-image img {
+    max-width: 80px; /* Или другой фиксированный размер, чтобы иконки не растягивались */
+    max-height: 80px;
+    width: auto;
+    height: auto;
+}
+
+
+.block3-divider {
+    width: 60%;
+    align-items: center;
+    height: 2px;
+    background-color: grey;
+    margin: 5px auto; /* Центрируем линию и добавляем отступ */
+}
+
+
+/*SECTION SAFETY*/
+
+/*WHY WE*/
+
+.block4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.block4-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 400px; /* Фиксированная минимальная высота */
+    transition: transform 0.3s ease-out; /* Добавлена плавная анимация */
+}
+.block4-title {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.block4-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px; /* Задай нужную ширину */
+    margin: auto;
+    transition: transform 0.3s ease-out; /* Добавлен плавный переход */
+}
+
+.block4-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease-out;
+}
+
+.image-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.dot.active {
+    background: white;
+}
+
+.block4-content {
+    width: 45%;
+    flex-grow: 1;
+    margin-left: 40px;
+    transition: margin-left 0.3s ease-out; /* Плавный переход для отступа */
+}
+.block4-accordion .accordion-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+.accordion-content.open {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.accordion-button {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.accordion-content {
+    font-size: 1.2rem;
+}
+
+/*WHY WE*/
+/*GALLERY*/
+
+.gallery {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-row.offset {
+    margin-left: 50px;
+}
+
+.gallery-item img {
+    width: 180px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Модальное окно */
+.modal-gallery-main {
+    display: none; /* По умолчанию скрыто */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контент модального окна */
+.modal-content2 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 95%;
+    height: 80%;
+    overflow: auto;
+    text-align: center;
+}
+
+/* Закрывающая кнопка */
+.close-gallery {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Галерея внутри модального окна */
+.modal-gallery {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.modal-gallery img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.modal-gallery img:hover {
+    transform: scale(1.3);
+}
+
+
+/*GALLERY*/
+/*FOOTER*/
+.footer {
+    background: #fcf1dd;
+    padding: 20px 0;
+    margin-top: auto;
+}
+.footer-title {
+    font-family: Lobster;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+.logo2 img{
+    height: 90px;
+    max-height: 100%;
+    width: auto;
+    transition: transform 0.2s ease-in;
+    display: inline-block;
+}
+.logo2 img:hover {
+    transform: scale(1.1);
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links li {
+    display: inline;
+    transition: transform 0.2s ease-in;
+}
+.social-links li:hover {
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+.footer-email {
+    color: black;
+    font-family: Inika;
+}
+/*FOOTER*/
+
+/*TOURS PAGE*/
+
+
+
+/*TOURS PAGE*/

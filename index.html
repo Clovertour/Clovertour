@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- 1c2sg6gJF2mm5fMq6pvXTzBBJljxP9Qv85nLeKcPhEvg -->
+    <!-- AKfycbydivqcaCt1tIUMV8ff56Yfbw7fQIjerduD6ubXwD_7Y-HQogTbk7Rm71839Li5zU8I -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobilestyle.css" media="only screen and (max-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Clovertour</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+        <nav class="nav-bar">
+
+            <a href="index.html" class="logo">
+                <img src="images/logos/logo2.png" alt="Логотип">
+            </a>
+            
+            <ul class="nav-menu">
+
+                <a href="#about" data-i18n="about">О нас</a>
+                <a href="tours.html" data-i18n="tours">Туры</a>
+                <a href="#contacts" data-i18n="contacts">Контакты</a>
+                <a href="#gallery" data-i18n="gallery">Галерея</a>
+
+
+                <div class="language-switcher">
+                    <button id="current-lang">RU</button>
+                    <ul id="lang-menu" class="hidden">
+                        <li data-lang="ru">RU</li>
+                        <li data-lang="en">EN</li>
+                        <li data-lang="es">ES</li>
+                    </ul>
+                </div>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <!--HEADER-->
+
+    <button id="scrollTopBtn" class="scroll-top">↑</button>
+
+    <!--BLOCK 1-->
+    <div class="block1">
+        <div class="slideshow">
+            <img src="images/backgrounds/bg1.png" class="slide active">
+            <img src="images/backgrounds/bg2.png" class="slide">
+            <img src="images/backgrounds/bg3.png" class="slide">
+            <img src="images/backgrounds/bg4.png" class="slide">
+            <img src="images/backgrounds/bg5.png" class="slide">
+        </div>
+    
+        <div class="block1-content">
+            <h1 class="block1-title" data-i18n="block1-title1">Добро пожаловать в Clovertour</h1>
+            <h2 class="block1-subtitle" data-i18n="block1-subtitle1">Ирландия — это сказочный Изумрудный остров, где легенды оживают среди зеленых холмов и древних замков. Шум прибоя омывает суровые утесы, а в уютных пабах звучит звонкая кельтская музыка. Здесь каждый уголок пропитан магией: от мифов о лепреконах до таинственных руин древних цивилизаций. Ирландия — это страна душевного тепла, волшебной природы и бесконечного вдохновения.</h2>
+            <button class="block1-bt" id="scrollButton">↑</button>
+        </div>
+    </div>
+    <!--BLOCK1-->
+
+    <!--SECTION TOURS-->
+    <section class="tours">
+
+        <div class="block2">
+            <h1 class="block2-title" data-i18n="block2-title">Самые популярные туры</h1>
+            <div class="cards">
+        
+                <div class="card1">
+                    <div class="card-content">
+                        <h1 data-i18n="block2-card1-h1">Тур в Голуэй</h1>
+                        <h2 data-i18n="block2-card1-h2">Насладитесь природой и историей этого уютного ирландского города, c его замками и побережьем.</h2>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/tours/tour1.png" alt="Tour 1">
+                        <button class="card-button" data-i18n="block2-card1-bt1">Забронировать</button>
+                    </div>
+                </div>
+        
+                <div class="card2">
+                    <div class="card-content">
+                        <h1 data-i18n="block2-card2-h1">Тур такой-то</h1>
+                        <h2 data-i18n="block2-card2-h2">Описание тура такое-то</h2>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/tours/tour2.png" alt="Tour 2">
+                        <button class="card-button" data-i18n="block2-card2-bt1">Забронировать</button>
+                    </div>
+                </div>
+        
+                <div class="card3">
+                    <div class="card-content">
+                        <h1 data-i18n="block2-card3-h1">Тур такой-то</h1>
+                        <h2 data-i18n="block2-card3-h2">Описание тура такое-то</h2>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/tours/tour3.png" alt="Tour 3">
+                        <button class="card-button" data-i18n="block2-card3-bt1">Забронировать</button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <div id="booking-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 data-i18n="fill-data">Заполните данные</h2>
+                <form id="bookingForm">
+                    <input type="text" id="name" placeholder=" Full name" required>
+                    <input type="tel" id="phone" placeholder="Phone" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <img src="/images/logos/logo2.png" alt="">
+                    <button type="submit" data-i18n="send-data">Отправить!</button>
+                </form>                
+            </div>
+        </div>
+    </section>
+    <!--SECTION TOURS-->
+
+    <!--SECTION SAFETY INFO-->
+    <section id="about" class="block3">
+        <div class="block3-container">
+    
+            <div class="block3-subcont1">
+                <div class="block3-info1">
+                    <div class="block3-text">
+                        <h1 class="block3-info1-title">100% Безопасность</h1>
+                        <h2 class="block3-info1-subtitle">Путешествуйте без забот, мы всё обеспечим!</h2>
+                    </div>
+                    <div class="block3-image">
+                        <img src="/images/icons/safety.png" alt="Безопасность">
+                    </div>
+                </div>
+                <div class="block3-divider"></div>
+                <div class="block3-info2">
+                    <div class="block3-text">
+                        <h1 class="block3-info2-title">Лучшее время в Ирландии</h1>
+                        <h2 class="block3-info2-subtitle">Откройте лучшие места и события!</h2>
+                    </div>
+                    <div class="block3-image">
+                        <img src="/images/icons/map.png" alt="Лучшее время">
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="block3-subcont2">
+                <div class="block3-info3">
+                    <div class="block3-text">
+                        <h1 class="block3-info3-title">Комфорт и поддержка 24/7</h1>
+                        <h2 class="block3-info3-subtitle">Всегда на связи, поможем в пути!</h2>
+                    </div>
+                    <div class="block3-image">
+                        <img src="/images/icons/callback.png" alt="Поддержка 24/7">
+                    </div>
+                </div>
+                <div class="block3-divider"></div>
+                <div class="block3-info4">
+                    <div class="block3-text">
+                        <h1 class="block3-info4-title">Секреты настоящей Ирландии</h1>
+                        <h2 class="block3-info4-subtitle">Уникальные места, о которых не знают туристы!</h2>
+                    </div>
+                    <div class="block3-image">
+                        <img src="/images/icons/secret.png" alt="Секреты Ирландии">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    <!--SECTION SAFETY INFO-->
+
+    <!--SECTION WHY WE-->
+
+    <section class="block4">
+        <div class="block4-container">
+    
+            <div class="block4-content">
+                <h1 class="block4-title" data-i18n="block4-title">Почему лучшие путешествия с нами?</h1>
+    
+                <div class="block4-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-button" data-i18n="accordion-experience">Опыт работы</button>
+                        <div class="accordion-content" data-i18n="accordion-experience-content">Мы имеем многолетний опыт в организации туров.</div>
+                    </div>
+    
+                    <div class="accordion-item">
+                        <button class="accordion-button" data-i18n="accordion-team">Команда профи</button>
+                        <div class="accordion-content" data-i18n="accordion-team-content">Наши гиды — профессионалы своего дела.</div>
+                    </div>
+    
+                    <div class="accordion-item">
+                        <button class="accordion-button" data-i18n="accordion-prices">Доступные цены</button>
+                        <div class="accordion-content" data-i18n="accordion-prices-content">Лучшие предложения по выгодным ценам.</div>
+                    </div>
+    
+                    <div class="accordion-item">
+                        <button class="accordion-button" data-i18n="accordion-selection">Широкий выбор</button>
+                        <div class="accordion-content" data-i18n="accordion-selection-content">Разнообразные маршруты и уникальные туры.</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="block4-image-container">
+                <img id="block4-image" src="/images/backgrounds/bg1.png" alt="Travel Image">
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <!--SECTION WHY WE-->
+
+    <!-- GALLERY -->
+    <section class="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-container">
+            <div class="gallery-row">
+                <div class="gallery-item"><img src="images/gallery/gallery1.jpg" alt="Image 1"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery2.jpg" alt="Image 2"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery3.jpg" alt="Image 3"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery4.jpg" alt="Image 4"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery5.jpg" alt="Image 5"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery6.jpg" alt="Image 6"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery7.jpg" alt="Image 7"></div>
+            </div>
+            <div class="gallery-row offset">
+                <div class="gallery-item"><img src="images/gallery/gallery8.jpg" alt="Image 8"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery9.jpg" alt="Image 9"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery10.jpg" alt="Image 10"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery11.jpg" alt="Image 11"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery12.jpg" alt="Image 12"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery13.jpg" alt="Image 13"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery14.jpg" alt="Image 14"></div>
+            </div>
+            <div class="gallery-row">
+                <div class="gallery-item"><img src="images/gallery/gallery15.jpg" alt="Image 15"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery16.jpg" alt="Image 16"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery17.jpg" alt="Image 17"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery18.jpg" alt="Image 18"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery19.jpg" alt="Image 19"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery20.jpg" alt="Image 20"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery21.jpg" alt="Image 21"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div id="gallery-modal" class="modal-gallery-main">
+        <div class="modal-content2">
+            <span class="close-gallery">&times;</span>
+            <div class="modal-gallery">
+                <img src="images/gallery/gallery1.jpg" alt="Image 1">
+                <img src="images/gallery/gallery2.jpg" alt="Image 2">
+                <img src="images/gallery/gallery3.jpg" alt="Image 3">
+                <img src="images/gallery/gallery4.jpg" alt="Image 4">
+                <img src="images/gallery/gallery5.jpg" alt="Image 5">
+                <img src="images/gallery/gallery6.jpg" alt="Image 6">
+                <img src="images/gallery/gallery7.jpg" alt="Image 1">
+                <img src="images/gallery/gallery8.jpg" alt="Image 2">
+                <img src="images/gallery/gallery9.jpg" alt="Image 3">
+                <img src="images/gallery/gallery10.jpg" alt="Image 4">
+                <img src="images/gallery/gallery11.jpg" alt="Image 5">
+                <img src="images/gallery/gallery12.jpg" alt="Image 6">
+                <img src="images/gallery/gallery13.jpg" alt="Image 1">
+                <img src="images/gallery/gallery14.jpg" alt="Image 2">
+                <img src="images/gallery/gallery15.jpg" alt="Image 3">
+                <img src="images/gallery/gallery16.jpg" alt="Image 4">
+                <img src="images/gallery/gallery17.jpg" alt="Image 5">
+                <img src="images/gallery/gallery18.jpg" alt="Image 6">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- GALLERY -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h1 class="footer-title" data-i18n="footer-title">Свяжитесь с нами:</h1>
+                <div class="email-phone">
+                    <a href="mailto:example@email.com" class="footer-email">olgatourbest@gmail.com</a>
+                </div>
+
+                <ul class="social-links">
+                    <li><a href="#"><img src="images/logos/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-center">
+                <a href="index.html" class="logo2">
+                    <img src="images/logos/logo2.png" alt="Логотип">
+                </a>
+            </div>
+        
+            <div class="footer-right">
+                <p>&copy; 2025 Все права защищены</p>
+                <p>Политика конфиденциальности | Условия использования</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <script src="script.js"></script>
+</body>
+</html>

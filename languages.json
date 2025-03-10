@@ -1,0 +1,107 @@
+{
+    "ru": {
+      "home": "Главная",
+      "about": "О нас",
+      "contacts": "Контакты",
+      "gallery": "Галерея",
+      "tours": "Туры",
+      "fill-data": "Заполните данные",
+      "send-data": "Отправить!",
+  
+      "block1-title1": "Добро пожаловать в Clovertour",
+      "block1-subtitle1": "Ирландия — это сказочный Изумрудный остров, где легенды оживают среди зеленых холмов и древних замков. Шум прибоя омывает суровые утесы, а в уютных пабах звучит звонкая кельтская музыка. Здесь каждый уголок пропитан магией: от мифов о лепреконах до таинственных руин древних цивилизаций. Ирландия — это страна душевного тепла, волшебной природы и бесконечного вдохновения.",
+      "block1-bt1": "Узнать больше",
+  
+      "block2-title": "Самые популярные туры",
+      "block2-card1-h1": "Тур в Голуэй",
+      "block2-card1-h2": "Насладитесь природой и историей этого уютного ирландского города, c его замками и побережьем.",
+      "block2-card1-bt1": "Забронировать",
+      "block2-card2-h1": "Тур в Килларни",
+      "block2-card2-h2": "Исследуйте захватывающие виды и леса национального парка Килларни.",
+      "block2-card2-bt1": "Забронировать",
+      "block2-card3-h1": "Тур по Дублину",
+      "block2-card3-h2": "Прогулка по историческим местам Дублина, от музеев до старинных пабов.",
+      "block2-card3-bt1": "Забронировать",
+  
+      "block4-title": "Почему лучшие путешествия с нами?",
+      "accordion-experience": "Опыт работы",
+      "accordion-experience-content": "Мы имеем многолетний опыт в организации туров. Мы имеем многолетний опыт в организации туров.",
+      "accordion-team": "Команда профи",
+      "accordion-team-content": "Наши гиды — профессионалы своего дела. Наши гиды — профессионалы своего дела.",
+      "accordion-prices": "Доступные цены",
+      "accordion-prices-content": "Лучшие предложения по выгодным ценам. Лучшие предложения по выгодным ценам.",
+      "accordion-selection": "Широкий выбор",
+      "accordion-selection-content": "Разнообразные маршруты и уникальные туры. Разнообразные маршруты и уникальные туры."
+    },
+  
+    "en": {
+      "home": "Home",
+      "about": "About Us",
+      "contacts": "Contacts",
+      "gallery": "Gallery",
+      "tours": "Tours",
+      "fill-data": "Fill in the details",
+      "send-data": "Send!",
+  
+      "block1-title1": "Welcome to Clovertour",
+      "block1-subtitle1": "Ireland is a fairytale Emerald Isle, where legends come to life among green hills and ancient castles. The roar of the surf washes over rugged cliffs, while lively Celtic music fills the cozy pubs. Every corner here is steeped in magic, from myths of leprechauns to the mysterious ruins of ancient civilizations. Ireland is a land of warmth, enchanting nature, and endless inspiration.",
+      "block1-bt1": "Read more",
+  
+      "block2-title": "Most Popular Tours",
+      "block2-card1-h1": "Galway Tour",
+      "block2-card1-h2": "Enjoy the nature and history of this cozy Irish city, famous for its castles and coastline.",
+      "block2-card1-bt1": "Book now",
+      "block2-card2-h1": "Killarney Tour",
+      "block2-card2-h2": "Explore the breathtaking views and forests of Killarney National Park.",
+      "block2-card2-bt1": "Book now",
+      "block2-card3-h1": "Dublin Tour",
+      "block2-card3-h2": "A stroll through Dublin's historic sites, from museums to old pubs.",
+      "block2-card3-bt1": "Book now",
+  
+      "block4-title": "Why the best travels are with us?",
+      "accordion-experience": "Experience",
+      "accordion-experience-content": "We have years of experience organizing tours. We have years of experience organizing tours.",
+      "accordion-team": "Team of Professionals",
+      "accordion-team-content": "Our guides are professionals in their field. Our guides are professionals in their field.",
+      "accordion-prices": "Affordable Prices",
+      "accordion-prices-content": "The best deals at great prices. The best deals at great prices.",
+      "accordion-selection": "Wide Selection",
+      "accordion-selection-content": "Diverse routes and unique tours. Diverse routes and unique tours."
+    },
+  
+    "es": {
+      "home": "Inicio",
+      "about": "Sobre Nosotros",
+      "contacts": "Contactos",
+      "gallery": "Galería",
+      "tours": "Excursiones",
+      "fill-data": "Rellena los datos",
+      "send-data": "¡Enviar!",
+  
+      "block1-title1": "Bienvenido a Clovertour",
+      "block1-subtitle1": "Irlanda es una isla esmeralda de cuento de hadas, donde las leyendas cobran vida entre colinas verdes y antiguos castillos. El rugido de las olas golpea los acantilados escarpados, mientras que en los acogedores pubs resuena la vibrante música celta. Cada rincón aquí está impregnado de magia, desde los mitos sobre los duendes hasta las misteriosas ruinas de antiguas civilizaciones. Irlanda es una tierra de calidez, naturaleza encantadora e inspiración infinita.",
+      "block1-bt1": "Leer Más",
+  
+      "block2-title": "Los Tours Más Populares",
+      "block2-card1-h1": "Tour a Galway",
+      "block2-card1-h2": "Disfruta de la naturaleza y la historia de esta acogedora ciudad irlandesa, famosa por sus castillos y su costa.",
+      "block2-card1-bt1": "Reservar ahora",
+      "block2-card2-h1": "Tour a Killarney",
+      "block2-card2-h2": "Explora las vistas impresionantes y los bosques del Parque Nacional de Killarney.",
+      "block2-card2-bt1": "Reservar ahora",
+      "block2-card3-h1": "Tour por Dublín",
+      "block2-card3-h2": "Un paseo por los sitios históricos de Dublín, desde museos hasta antiguos pubs.",
+      "block2-card3-bt1": "Reservar ahora",
+  
+      "block4-title": "¿Por qué los mejores viajes son con nosotros?",
+      "accordion-experience": "Experiencia",
+      "accordion-experience-content": "Tenemos años de experiencia organizando excursiones. Tenemos años de experiencia organizando excursiones.",
+      "accordion-team": "Equipo de Profesionales",
+      "accordion-team-content": "Nuestros guías son profesionales en su campo. Nuestros guías son profesionales en su campo.",
+      "accordion-prices": "Precios Accesibles",
+      "accordion-prices-content": "Las mejores ofertas a excelentes precios. Las mejores ofertas a excelentes precios.",
+      "accordion-selection": "Amplia Selección",
+      "accordion-selection-content": "Rutas diversas y excursiones únicas. Rutas diversas y excursiones únicas."
+    }
+  }
+  

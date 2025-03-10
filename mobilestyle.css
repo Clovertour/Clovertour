@@ -1,0 +1,152 @@
+body {
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*Header*/
+.header {
+    flex-direction: column; /* Сменим на вертикальное расположение */
+    height: auto; /* Высота для мобильных устройств */
+    padding: 10px;
+}
+
+.nav-bar {
+    width: 100%; /* Навигация на всю ширину */
+    flex-direction: column; /* Вертикальное расположение */
+    gap: 0.4rem;
+}
+
+.logo img {
+   display: none;
+}
+
+.nav-menu {
+    gap: 1rem; /* Уменьшаем расстояние между ссылками для мобильных */
+}
+
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+/*Header*/
+
+/*Block1*/
+.block1-content {
+    width: 90%;
+}
+.block1-bt {
+    margin-top: 5rem;
+    transition: none;
+}
+.block1-bt:hover {
+    transform: none;
+    text-decoration: none;
+}
+/*Block1*/
+
+/*Safety*/
+.block3-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.block3-subcont1, .block3-subcont2 {
+    width: 100%; /* Блоки занимают 100% ширины */
+    margin-bottom: 20px; /* Отступ между блоками */
+}
+
+.block3-info1, .block3-info2, .block3-info3, .block3-info4 {
+    flex-direction: column; /* Сделаем элементы в столбик */
+    align-items: center;
+    height: auto; /* Автоматическая высота для мобильных устройств */
+    padding: 15px;
+}
+
+.block3-image {
+    width: 100%; /* Изображения занимают всю ширину блока */
+    justify-content: center;
+}
+
+.block3-image img {
+    max-width: 60px; /* Уменьшаем размер изображений */
+    max-height: 60px;
+}
+
+.block3-info1-title, .block3-info2-title, .block3-info3-title, .block3-info4-title {
+    font-size: 1.1rem; /* Уменьшаем размер шрифта для мобильных устройств */
+}
+
+.block3-info1-subtitle, .block3-info2-subtitle, .block3-info3-subtitle, .block3-info4-subtitle {
+    font-size: 0.9rem; /* Уменьшаем размер шрифта для мобильных устройств */
+}
+
+.block3-divider {
+    width: 100%; /* Увеличиваем ширину разделителя */
+}
+/*Safety*/
+
+/*Why we*/
+.block4-container {
+    flex-direction: column-reverse; /* Стилизация для колонок на мобильных */
+    align-items: center;
+    justify-content: center;
+}
+
+.block4-title {
+    font-size: 1.5rem; /* Уменьшаем размер шрифта заголовка для мобильных */
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.block4-image-container {
+    max-width: 100%; /* Ширина изображения теперь 100% */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.block4-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-dots {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px; /* Уменьшаем размер точек для мобильных */
+}
+
+.block4-content {
+    width: 100%; /* Контент теперь занимает всю ширину на мобильных */
+    margin-left: 0; /* Убираем левый отступ */
+    text-align: center;
+}
+
+.accordion-button {
+    font-size: 1.1rem; /* Уменьшаем размер шрифта для кнопок аккордеона */
+}
+
+.accordion-content {
+    font-size: 1rem; /* Уменьшаем размер шрифта для содержимого */
+}
+/*Why we*/
+
+/*Gallery*/
+
+.gallery {
+    display: none;
+}
+/*Gallery*/
