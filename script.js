@@ -1,6 +1,9 @@
 window.onload = function () {
     window.scrollTo(0, 0);
 };
+function openCityPage(url) {
+    window.location.href = url;
+}
 
 /*LANGUAGE BUTTON*/
 document.addEventListener("DOMContentLoaded", () => {

@@ -151,7 +151,14 @@ html {
     opacity: 1;
     transform: scale(1);
 }
-
+/*MOBILE BLOCK CARDS*/
+.city-slider {
+    display: none;
+}
+.city-title {
+    display: none;
+}
+/*MOBILE BLOCK CARDS*/
 /*BLOCK1*/
 
 .block1 {
@@ -224,6 +231,9 @@ html {
     transform: scale(1.1);
     text-decoration: underline;
     transform: rotate(180deg);
+}
+.block1 h3 {
+    display: none;
 }
 /*BLOCK1*/
 
