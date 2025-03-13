@@ -95,7 +95,9 @@ html {
     .city-slider::-webkit-scrollbar {
         display: none;
     }
-
+    .city-subcont h2{
+        margin-left: 5px;
+    }
     .city-container {
         display: flex;
         gap: 10px;
@@ -127,7 +129,7 @@ html {
         object-fit: cover;
     }
 
-    .city-card span {
+    .city-card h2 {
         display: block;
         font-size: 12px;
         color: black;
